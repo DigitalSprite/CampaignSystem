@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<SplitPane dividerPositions="0.09647495361781076" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <items>
+    <AnchorPane maxHeight="200.0" minHeight="100.0" minWidth="0.0" prefHeight="100.0" prefWidth="1600.0">
+         <children>
+            <Label layoutX="318.0" layoutY="18.0" text="软件学院团学联 2016-2017 年换届改选唱票窗口（副部长）" textAlignment="CENTER" AnchorPane.leftAnchor="318.0">
+               <font>
+                  <Font name="Microsoft YaHei" size="48.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane fx:id="TotalArea" minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="1600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0478e4" height="970.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0796f540" height="980.0" layoutX="280.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#057be3" height="980.0" layoutX="560.0" layoutY="-9.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#079af53f" height="970.0" layoutX="840.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#057be3" height="970.0" layoutX="1120.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#079af53f" height="970.0" layoutX="1400.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#057be3" height="970.0" layoutX="1680.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
+            <VBox maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Label maxWidth="-Infinity" prefHeight="100.0" prefWidth="201.0" text="   组织部" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children></VBox>
+            <VBox fx:id="area1" layoutY="100.0" prefHeight="800.0" prefWidth="200.0">
+               <children>
+                  <GridPane prefHeight="789.0" prefWidth="200.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="124.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="76.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="Add1" minHeight="25.0" minWidth="50.0" mnemonicParsing="false" text="添加" GridPane.halignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Sub1" minWidth="50.0" mnemonicParsing="false" text="删除" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <TextField fx:id="Text1" alignment="CENTER" maxHeight="40.0" maxWidth="100.0" prefHeight="67.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Microsoft YaHei Light" size="24.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox fx:id="area2" layoutX="280.0" layoutY="100.0" prefHeight="800.0" prefWidth="200.0">
+               <children>
+                  <GridPane prefHeight="789.0" prefWidth="200.0">
+                     <children>
+                        <GridPane GridPane.rowIndex="4">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField fx:id="Text2" alignment="CENTER" maxHeight="40.0" maxWidth="100.0" prefHeight="67.0" prefWidth="100.0" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font name="Microsoft YaHei Light" size="24.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="Add2" minWidth="50.0" mnemonicParsing="false" text="添加" GridPane.halignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Sub2" minWidth="50.0" mnemonicParsing="false" text="删除" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="124.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="76.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox layoutX="280.0" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Label maxWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" text="   学术部" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="560.0" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Label maxWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" text="   文艺部" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="area3" layoutX="560.0" layoutY="100.0" prefHeight="800.0" prefWidth="200.0">
+               <children>
+                  <GridPane prefHeight="789.0" prefWidth="200.0">
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <TextField fx:id="Text3" alignment="CENTER" maxHeight="40.0" maxWidth="100.0" prefHeight="67.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Microsoft YaHei Light" size="24.0" />
+                           </font>
+                        </TextField>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="Add3" minWidth="50.0" mnemonicParsing="false" text="添加" GridPane.halignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Sub3" minWidth="50.0" mnemonicParsing="false" text="删除" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="124.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="76.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox layoutX="840.0" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Label maxWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" text="   宣传部" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="area4" layoutX="840.0" layoutY="100.0" prefHeight="800.0" prefWidth="200.0">
+               <children>
+                  <GridPane prefHeight="789.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="139.0" prefWidth="100.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <TextField fx:id="Text4" alignment="CENTER" maxHeight="40.0" maxWidth="100.0" prefHeight="67.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Microsoft YaHei Light" size="24.0" />
+                           </font>
+                        </TextField>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="Add4" minWidth="50.0" mnemonicParsing="false" text="添加" GridPane.halignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Sub4" minWidth="50.0" mnemonicParsing="false" text="删除" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="124.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="76.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox layoutX="1120.0" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Label maxWidth="-Infinity" prefHeight="102.0" prefWidth="201.0" text="   体育部" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="area5" layoutX="1120.0" layoutY="100.0" prefHeight="800.0" prefWidth="200.0">
+               <children>
+                  <GridPane prefHeight="789.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="139.0" prefWidth="100.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <TextField fx:id="Text5" alignment="CENTER" maxHeight="40.0" maxWidth="100.0" prefHeight="67.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Microsoft YaHei Light" size="24.0" />
+                           </font>
+                        </TextField>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="Add5" minWidth="50.0" mnemonicParsing="false" text="添加" GridPane.halignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Sub5" minWidth="50.0" mnemonicParsing="false" text="删除" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="124.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="76.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox fx:id="area6" layoutX="1400.0" layoutY="100.0" prefHeight="800.0" prefWidth="200.0">
+               <children>
+                  <GridPane prefHeight="789.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="139.0" prefWidth="100.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <TextField alignment="CENTER" maxHeight="40.0" maxWidth="100.0" prefHeight="67.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Microsoft YaHei Light" size="24.0" />
+                           </font>
+                        </TextField>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="Add6" minWidth="50.0" mnemonicParsing="false" text="添加" GridPane.halignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button minWidth="50.0" mnemonicParsing="false" text="删除" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="124.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="76.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox layoutX="1400.0" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Label maxWidth="-Infinity" prefHeight="102.0" prefWidth="201.0" text="   外联部" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="area7" layoutX="1680.0" layoutY="100.0" prefHeight="800.0" prefWidth="200.0">
+               <children>
+                  <GridPane prefHeight="789.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="139.0" prefWidth="100.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <TextField alignment="CENTER" maxHeight="40.0" maxWidth="100.0" prefHeight="67.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Microsoft YaHei Light" size="24.0" />
+                           </font>
+                        </TextField>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="Add7" minWidth="50.0" mnemonicParsing="false" text="添加" GridPane.halignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button minWidth="50.0" mnemonicParsing="false" text="删除" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="25.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="124.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="76.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox layoutX="1680.0" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Label maxWidth="-Infinity" prefHeight="102.0" prefWidth="201.0" text="    秘书处" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

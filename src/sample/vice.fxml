@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1080.0" maxWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViceController">
+   <children>
+      <SplitPane dividerPositions="0.09925788497217068" orientation="VERTICAL" prefHeight="1080.0" prefWidth="1920.0">
+         <items>
+            <AnchorPane minHeight="100.0" minWidth="1920.0" prefHeight="0.0" prefWidth="0.0">
+               <children>
+                  <Label layoutX="437.0" layoutY="24.0" text="软件学院团学联 2016-2017 年换届改选唱票窗口（副主席）">
+                     <font>
+                        <Font name="Microsoft YaHei Light" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Area" minHeight="980.0" minWidth="1920.0" prefHeight="900.0" prefWidth="1920.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#aeff211c" height="700.0" layoutX="1200.0" stroke="TRANSPARENT" strokeType="INSIDE" width="500.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b1ff217f" height="700.0" layoutX="200.0" stroke="TRANSPARENT" strokeType="INSIDE" width="500.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b1ff214e" height="700.0" layoutX="700.0" stroke="TRANSPARENT" strokeType="INSIDE" width="500.0" />
+                  <VBox layoutY="700.0" prefHeight="100.0" prefWidth="1920.0">
+                     <children>
+                        <GridPane prefHeight="101.0" prefWidth="1920.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="Confirm" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" text="增加" GridPane.columnIndex="5" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font name="Microsoft YaHei Light" size="24.0" />
+                                 </font></Button>
+                              <TextField fx:id="Input" alignment="CENTER" maxHeight="50.0" maxWidth="200.0" minHeight="50.0" minWidth="200.0" GridPane.columnIndex="4" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font name="Microsoft YaHei Light" size="24.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="Delete" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" text="删除" GridPane.columnIndex="6" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font name="Microsoft YaHei Light" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
