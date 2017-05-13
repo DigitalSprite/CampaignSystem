@@ -16,7 +16,7 @@
   <items>
     <AnchorPane maxHeight="200.0" minHeight="100.0" minWidth="0.0" prefHeight="100.0" prefWidth="1600.0">
          <children>
-            <Label layoutX="318.0" layoutY="18.0" text="软件学院团学联 2016-2017 年换届改选唱票窗口（副部长）" textAlignment="CENTER" AnchorPane.leftAnchor="318.0">
+            <Label layoutX="246.0" layoutY="18.0" text="软件学院团学联 2016-2017 年换届改选唱票窗口（副部长及处长）" textAlignment="CENTER" AnchorPane.leftAnchor="246.0">
                <font>
                   <Font name="Microsoft YaHei" size="48.0" />
                </font>
