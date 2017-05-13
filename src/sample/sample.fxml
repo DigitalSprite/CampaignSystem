@@ -24,27 +24,28 @@
          </children></AnchorPane>
     <AnchorPane fx:id="TotalArea" minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="1600.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0478e4" height="970.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0478e4" height="970.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="250.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0796f540" height="980.0" layoutX="280.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#057be3" height="980.0" layoutX="560.0" layoutY="-9.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#079af53f" height="970.0" layoutX="840.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#057be3" height="970.0" layoutX="1120.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#079af53f" height="970.0" layoutX="1400.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#057be3" height="970.0" layoutX="1680.0" opacity="0.24" stroke="#00000024" strokeType="INSIDE" width="200.0" />
-            <VBox maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" prefHeight="100.0" prefWidth="100.0">
+            <VBox maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="250.0" prefHeight="100.0" prefWidth="100.0">
                <children>
-                  <Label maxWidth="-Infinity" prefHeight="100.0" prefWidth="201.0" text="   组织部" textAlignment="CENTER">
+                  <Label maxWidth="-Infinity" prefHeight="100.0" prefWidth="252.0" text="     组织部" textAlignment="CENTER">
                      <font>
                         <Font name="Microsoft YaHei Bold" size="40.0" />
                      </font>
                   </Label>
                </children></VBox>
-            <VBox fx:id="area1" layoutY="100.0" prefHeight="800.0" prefWidth="200.0">
+            <VBox fx:id="area1" layoutY="100.0" prefHeight="800.0" prefWidth="250.0">
                <children>
                   <GridPane prefHeight="789.0" prefWidth="200.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="124.0" />
                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="76.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="65.0" />
                     </columnConstraints>
                     <rowConstraints>
                         <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />

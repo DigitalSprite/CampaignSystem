@@ -13,13 +13,19 @@ public class Setting {
     protected String[] NameText = new String[7];
     protected ArrayList<ArrayList<Label>> name = new ArrayList<ArrayList<Label>>();
     protected ArrayList<ArrayList<Label>> num = new ArrayList<ArrayList<Label>>();
+    protected  ArrayList<ArrayList<Label>> against = new ArrayList<ArrayList<Label>>();
     protected ArrayList<ArrayList<Button>> add = new ArrayList<ArrayList<Button>>();
     protected ArrayList<ArrayList<Button>> sub = new ArrayList<ArrayList<Button>>();
+    protected ArrayList<ArrayList<Button>> add_against = new ArrayList<ArrayList<Button>>();
+    protected ArrayList<ArrayList<Button>> sub_against = new ArrayList<ArrayList<Button>>();
 
     protected void setVisible(int id, int row, boolean test){
         name.get(id).get(row).setVisible(test);
         num.get(id).get(row).setVisible(test);
         add.get(id).get(row).setVisible(test);
         sub.get(id).get(row).setVisible(test);
+        add_against.get(id).get(row).setVisible(test);
+        sub_against.get(id).get(row).setVisible(test);
+        against.get(id).get(row).setVisible(test);
     }
 }
